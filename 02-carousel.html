@@ -19,9 +19,153 @@
 				font-family: "Inter", sans-serif;
 				color: #343a40;
 			}
+			.carousel {
+				width: 800px;
+				margin: 100px auto;
+				background-color: #087f5b;
+				padding: 32px;
+				padding-left: 86px;
+				padding-right: 48px;
+				border-radius: 8px;
+				position: relative;
+
+				display: flex;
+				align-items: center;
+				gap: 86px;
+			}
+			img {
+				height: 200px;
+				border-radius: 8px;
+				transform: scale(1.5);
+				box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+			}
+
+			.testimonial-text {
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 1.5;
+				margin-bottom: 32px;
+				color: #e6fcf5;
+			}
+
+			.testimonial-author {
+				font-size: 14px;
+				margin-bottom: 4px;
+				color: #c3fae8;
+			}
+
+			.testimonial-job {
+				font-size: 12px;
+				color: #c3fae8;
+			}
+
+			.btn {
+				background-color: #fff;
+				border: none;
+				height: 40px;
+				width: 40px;
+				border-radius: 1000px;
+				position: absolute;
+				box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+				cursor: pointer;
+
+				/* center the symbol inside the button with flex */
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.btn--left {
+				left: 0;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.btn--right {
+				right: 0px;
+				/* moves to the right */
+				top: 50%;
+				/* takes the half of its container */
+				transform: translate(50%, -50%);
+				/* moves the button itself of its own width 50% in directions specified for centering purposes*/
+			}
+			.btn-icon {
+				height: 24px;
+				width: 24px;
+				stroke: #087f5b;
+			}
+			.dots {
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				transform: translate(-50%, 32px);
+
+				display: flex;
+				gap: 12px;
+			}
+			.dot {
+				height: 12px;
+				width: 12px;
+				border: 2px solid #087f5b;
+				background-color: #fff;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.dot--fill {
+				background-color: #087f5b;
+			}
 		</style>
 	</head>
 	<body>
-		<div class="carousel"></div>
+		<div class="carousel">
+			<img src="maria.jpg" alt="Maria de Almeida" />
+			<blockquote class="testimonial">
+				<p class="testimonial-text">
+					" Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+					nihil fuga dignissimos repellat est, odit ab praesentium dicta
+					suscipit. Hic itaque modi qui! "
+				</p>
+				<p class="testimonial-author">Maria de Almeida</p>
+				<p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
+			</blockquote>
+
+			<button class="btn btn--left">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="btn-icon"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					stroke-width="2"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15 19l-7-7 7-7"
+					/>
+				</svg>
+			</button>
+			<button class="btn btn--right">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="btn-icon"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					stroke-width="2"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M9 5l7 7-7 7"
+					/>
+				</svg>
+			</button>
+			<div class="dots">
+				<button class="dot dot--fill">&nbsp;</button>
+				<button class="dot">&nbsp;</button>
+				<button class="dot">&nbsp;</button>
+				<button class="dot">&nbsp;</button>
+				<!-- we cant leave this button completely empty instead we use &nbsp as a spaceholder -->
+			</div>
+		</div>
 	</body>
 </html>
