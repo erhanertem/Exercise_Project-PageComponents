@@ -20,6 +20,31 @@
 				color: #343a40;
 				line-height: 1;
 			}
+			table {
+				width: 800px;
+				background-color: #f8f9fa;
+				margin: 100px auto;
+				/* border: 1px solid #343a40; */
+				border-collapse: collapse;
+				/* td and th borders collapses into one otherwise they remain double line */
+			}
+
+			td,
+			th {
+				/* border: 1px solid #343a40; */
+				padding: 16px 24px;
+				text-align: left;
+			}
+
+			thead th {
+				background-color: #087f5b;
+				color: #fff;
+				width: 25%;
+				/* distributes the length to rows evenly */
+			}
+			tbody tr:nth-child(odd) {
+				background-color: #e9ecef;
+			}
 		</style>
 	</head>
 	<body>
