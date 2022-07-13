@@ -69,6 +69,25 @@
 
 			section {
 				background-color: #e9ecef;
+				padding: 40px;
+
+				overflow: scroll;
+				/* enables scrolling inside the container */
+
+				display: flex;
+				flex-direction: column;
+				row-gap: 40px;
+			}
+
+			.email {
+				background-color: #adb5bd;
+				height: 96px;
+				flex-shrink: 0;
+				/* disables shrinking on flex items due to overflow:scroll property */
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
 
 			aside {
