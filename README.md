@@ -1,13 +1,13 @@
-# Udemy Build Responsive Real-World Websites with HTML and CSS by Jonas Schmedtmann
+### 👋 **I am Erhan ERTEM**
 
-## **Objective:** Create web page components such as an accordion, carousel, table, pagination, hero section, and a basic email app layout
+&emsp;
+
+## Udemy Build Responsive Real-World Websites with HTML and CSS by Jonas Schmedtmann
+
+### **Objective:** Create web page components such as an accordion, carousel, table, pagination, hero section, and a basic email app layout
 
 - Implement GRID and FLEXBOX principles of CSS
-- Page components misc tips and tricks (lecture 6.88 - onward)
-
----
-
-### **Erhan ERTEM**
+- Page components, misc tips and tricks (lecture 6.88 - onward)
 
 ---
 
